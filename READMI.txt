@@ -1,0 +1,4 @@
+#Correr JS
+-Se puede usar 'node' como un comando en la terminal para probar código
+-Se puede inicializar un archivo .js a travez del comando 'node archiv.js'
+-A travez del navegador con un index.html
