@@ -9,8 +9,19 @@ class Persona {
     this.apellido = apellido;
     this.edad = edad;
   }
+
+  /* Esta es la manera de crear métodos dentro de clases */
+  imprimir() {
+    console.log(
+      `Nombre: ${this.nombre} - Apellido: ${this.apellido} - Edad: ${this.edad}`
+    );
+  }
 }
 
 /* Crear una instancia de la clase */
 const sebastian = new Persona("Sebastián", "Álava", 24);
-console.log(sebastian);
+const omar = new Persona("Omar", "Benavides", 25);
+
+/* Llamar a los métodos de las clases */
+sebastian.imprimir();
+omar.imprimir();
