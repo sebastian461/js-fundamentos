@@ -3,11 +3,20 @@ class Persona {
   nombre;
   apellido;
   edad;
+  domicilio;
 
   constructor(nombre, apellido, edad) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
+  }
+
+  set setDomicilio(domicilio) {
+    this.domicilio = domicilio.toUpperCase();
+  }
+
+  get getDomicilio() {
+    return `Domicilio: ${this.domicilio}`;
   }
 
   /* Esta es la manera de crear métodos dentro de clases */
@@ -24,4 +33,7 @@ const omar = new Persona("Omar", "Benavides", 25);
 
 /* Llamar a los métodos de las clases */
 sebastian.imprimir();
-omar.imprimir();
+//omar.imprimir();
+sebastian.setDomicilio = "Sur de Quito";
+
+console.log(sebastian.getDomicilio);
